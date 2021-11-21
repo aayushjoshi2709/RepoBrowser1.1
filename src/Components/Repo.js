@@ -1,11 +1,12 @@
 import React from 'react'
-
-function Repo(props) {
+import './Style.css'
+function Repo({name,desc,curr,owner}) {
     return (
-
-        <div className="Repo">
-            <p><b>{props.name}</b></p>
-            <p>{props.desc}</p>
+        <div className="Repo" onClick={()=>{
+            curr([owner,name]);
+        }}>
+            <p><b>{name}</b></p>
+            <p>{desc}</p>
         </div>
     )
 }

@@ -3,12 +3,13 @@ import Repo from "./Repo";
 import "./Style.css";
 import { useEffect } from "react";
 
-function Repos({RepoDesc}) {
+function Repos({RepoDesc,curr}) {
     return (
         <div className="Repos">
-                    {RepoDesc.map(repo => (
-                         <Repo key={repo["id"]} name={repo["name"]} desc={repo["description"]}/>
-                    ))
+                    
+                    {(RepoDesc!==undefined)?RepoDesc.map(repo => (
+                         <Repo key={repo["id"]} name={repo["name"]} desc={repo["description"]} owner={repo["owner"]["login"] }curr={curr}/>
+                    )):""
                     }
         </div>
   );

@@ -13,7 +13,7 @@ function AddRepo(props) {
             <p><button onClick={()=>{
               let org = document.getElementById("org").value;
               let name = document.getElementById("name").value;
-              props.setRepoList(arr=>[...arr,[org,name]])
+              props.setRepoList([org,name])
               props.setTrigger(false);
             }}>Add Repo</button></p>
         </div>
