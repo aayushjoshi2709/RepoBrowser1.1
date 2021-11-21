@@ -1,0 +1,59 @@
+.AddRepo{
+    position: absolute;
+    left: 42%;
+    top: 40%;
+    padding: 32px;
+    width: 11%;
+    height: 200px;
+    background-color: rgba(0,0,0,0.2);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.AddRepo button{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    width: 100vw;
+    padding: 4px;
+    height: 7vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+h1{
+    padding: 0px;
+    margin: 0px;
+}
+.Repos{
+    border:1px solid black;
+    width: 30vw;
+    display: flex;
+    flex-flow: column;
+    height: 90vh;
+    float: left;
+    padding: 2px;
+    overflow-y: scroll;
+}
+.Repo{
+
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.addButton{
+    background-color: aquamarine;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    top: -60px;
+    left: 10px;
+    display: block;
+    margin-bottom: -50px;
+    padding-bottom: -50px;
+    font-size: 40px;
+  }
