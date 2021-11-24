@@ -1,121 +1,83 @@
-.AddRepo{
-    position: absolute;
-    left: 42%;
-    top: 40%;
-    padding: 32px;
-    width: 11%;
-    height: 200px;
-    background-color: rgba(0,0,0,0.2);
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
+.header {
+  padding: 4px;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
-.AddRepo button{
-    display: block;
-    justify-content: center;
-    align-items: center;
+.addRepo{
+  margin-top: 30vh;
 }
-
-.header{
-    width: 99.5%;
-    padding: 4px;
-    height: 7vh;
-    background-color: black;
-    color: white;
-    text-align: center;
+.addButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-h1{
-    padding: 0px;
-    margin: 0px;
-}
-.Repos{
-    border:1px solid black;
-    width: 30vw;
-    display: flex;
-    flex-flow: column;
-    height: 90vh;
-    float: left;
-    padding: 2px;
-    overflow-y: scroll;
-}
-.Repo{
-
-    padding: 10px;
-    border: 1px solid black;
+#left-pane {
+  display: flex;
+  flex-direction: column;
 }
 
-.addButton{
-    background-color: aquamarine;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    position: absolute;
-    top: 650px;
-    left: 10px;
-    display: block;
-    font-size: 40px;
-  }
-  #left-pane{
-      height: 90vh;
-      width: 68.3vw;
-      border: 1px solid black;
-      float: left;
-      display: flex;
-      flex-direction: column;
-  }
+#left-pane .container {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  float: left;
+}
+#left-pane button {
+  margin: 10px;
+  padding: 8px;
+}
+.card-img-top {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  float: left;
+}
+#branch-issue-container{
+  height: 69vh;
+  overflow-x: hidden;
+}
+#loading {
+  position: absolute; 
+  left: 42%;
+  top: 40%;
+  padding: 32px;
+  width: 11%;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.card{
+  transition: all .2s ease-in-out;
+}
+.card:hover{
+  transform: scale(1.009);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 50%;
+}
 
-  #left-pane .container{
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    float: left;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
-#left-pane button{
-    margin: 10px;
-    padding: 8px;
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(216, 206, 206,0.5);
+  border-radius: 10%;
 }
-#branch-issue{
-    margin: 10px;
-    width: 67vw;
-    display: flex;
-    flex-direction: column;
-  
-}
-#branch-issue #container{
-    display: flex;
-    border: 1px solid black;
-    flex-direction: row;
-}
-.tabs{
-    padding: 10px;
-    width: 150px;
-    text-align: center;
-    justify-content: center;
-    border: 1px solid black;
-}
-.branch{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    border: 1px solid black;
-}
-#branch-container{
-    display: flexbox;
-    overflow-y: scroll;
-}
-.issue{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    border: 1px solid black;
-}
-.issue .container{
-    display: flex;
-    flex-direction: column;
-}
-.issue img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    float: left;
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(216, 206, 206,1);
 }

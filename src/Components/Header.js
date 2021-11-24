@@ -3,8 +3,8 @@ import './Style.css'
 function Header() {
     return (
         <>
-        <div className="header">
-            <h1>Github Browser</h1>
+        <div className="container-fluid header">
+            <h1  className="display-4">Github Browser</h1>
         </div>
         </>
     )
